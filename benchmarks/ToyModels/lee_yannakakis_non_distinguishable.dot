@@ -6,4 +6,6 @@ digraph non_distinguishable {
 	s1 -> s3 [label="b / 0"];
 	s2 -> s2 [label="b / 1"];
 	s3 -> s2 [label="b / 1"];
+	__start0 [label="" shape="none"];
+	__start0 -> s1;
 }

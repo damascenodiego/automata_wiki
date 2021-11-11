@@ -153,4 +153,6 @@ s8 -> s8[label="getProcessingOptions/6985"]
 s8 -> s8[label="readInvalidRecord/6A83"]
 s8 -> s8[label="verifyPINPlaintextCorrect/9000"]
 s8 -> s8[label="internalAuthenticate/6985"]
+__start0 [label="" shape="none"]
+__start0 -> s0;
 }

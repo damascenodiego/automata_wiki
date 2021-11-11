@@ -220,4 +220,6 @@ s21 -> s13[label="USB7_DISPLAY_TEXT/TIMEOUT"]
 s21 -> s21[label="SHIELD/CARD_INSERTED"]
 s21 -> s21[label="INSERT_CARD/INSERT_OK"]
 s21 -> s4[label="USB8_CRYPTOGRAM/VALID_CRYPTOGRAM"]
+__start0 [label="" shape="none"];
+__start0 -> s0;
 }

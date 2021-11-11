@@ -1,5 +1,5 @@
 digraph G {
-initialized [peripheries=2];
+initialized [label="peripheries=2"];
 PIN_verified [label=<PIN verified>];
 waiting_for_confirmation [label=<waiting for confirmation>];
 unconfirmed_cryptogram [label=<unconfirmed cryptogram>];
@@ -23,4 +23,6 @@ unconfirmed_cryptogram -> PIN_verified  [label="COMBINED_PIN/OK"];
 unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="SIGNDATA/LONG_ERROR"];
 unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="DISPLAY_TEXT/LONG_ERROR"];
 unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="USB8_CRYPTOGRAM/LONG_ERROR"];
+__start0 [label="" shape="none"];
+__start0 -> initialized;
 }

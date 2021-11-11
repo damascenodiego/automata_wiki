@@ -12,5 +12,7 @@ digraph distinguishable {
 	s4 -> s5 [label="b / 0"];
 	s5 -> s6 [label="b / 0"];
 	s6 -> s1 [label="b / 0"];
+	__start0 [label="" shape="none"];
+	__start0 -> s1;
 }
 

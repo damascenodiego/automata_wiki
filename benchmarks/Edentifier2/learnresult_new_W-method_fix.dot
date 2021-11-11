@@ -80,4 +80,6 @@ s7 -> s7[label="USB7_DISPLAY_TEXT/LONG_ERROR"]
 s7 -> s7[label="SHIELD/CARD_INSERTED"]
 s7 -> s7[label="INSERT_CARD/INSERT_OK"]
 s7 -> s7[label="USB8_CRYPTOGRAM/LONG_ERROR"]
+__start0 [label="" shape="none"];
+__start0 -> s0;
 }

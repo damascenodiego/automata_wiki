@@ -1,5 +1,5 @@
 digraph G {
-initialized [peripheries=2];
+initialized [label="peripheries=2"];
 PIN_verified [label="PIN verified"];
 waiting_for_confirmation [label="waiting for confirmation"];
 initialized -> initialized  [label="SIGNDATA/LONG_ERROR"];
@@ -17,4 +17,6 @@ waiting_for_confirmation -> waiting_for_confirmation  [label="DISPLAY_TEXT/LONG_
 waiting_for_confirmation -> PIN_verified  [label="COMBINED_PIN/OK"];
 waiting_for_confirmation -> PIN_verified  [label="ROBOT_OK/OK"];
 waiting_for_confirmation -> waiting_for_confirmation  [label="GEN_CRYPTOGRAM/LONG_ERROR"];
+__start0 [label="" shape="none"];
+__start0 -> initialized;
 }
